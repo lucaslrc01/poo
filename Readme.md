@@ -7,3 +7,6 @@
 ### Laboratórios
 
 - [Laboratório 1](lab-01/Readme.md) - Sistema de Controle de Versão
+
+ 
+ [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
