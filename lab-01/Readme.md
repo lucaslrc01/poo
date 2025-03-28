@@ -2,8 +2,8 @@
 
 ## Configuração inicial para uso do Git
 Configure seu nome e email (usado para identificar o autor dos commits):
-- git config −−global user.name "Seu Nome Completo"
-- git config −−global user.email "seu−email@example.com"
+> - git config −−global user.name "Seu Nome Completo"
+> - git config −−global user.email "seu−email@example.com"
 
 ## Criando Personal Access Token (PAT) no GitHub
 
@@ -23,6 +23,6 @@ Como na imagem abaixo:
 Para não ter que digitar o token a cada operação via linha de comando, é
 possível usar o credential helper do git
 -   Irá armazenar as credenciais na memória por 15 minutos  
-git config −−global credential.helper cache
+> git config −−global credential.helper cache
 -   Caso queira armazenar por mais tempo, use (irá armazenar por 1 hora)  
-git config −−global credential.helper 'cache −−timeout=3600'
+> git config −−global credential.helper 'cache −−timeout=3600'
