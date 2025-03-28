@@ -6,7 +6,7 @@ public class Exercicio02{
         Random aleatorio = new Random();
         Scanner leitor = new Scanner(System.in);
         
-        int numAleatorio = aleatorio.nextInt(9)+1;
+        int numAleatorio = aleatorio.nextInt(99)+1;
 
         System.out.println("          Acerte o número");        
         System.out.println("===================================");
