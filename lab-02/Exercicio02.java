@@ -6,21 +6,30 @@ public class Exercicio02{
         Random aleatorio = new Random();
         Scanner leitor = new Scanner(System.in);
         
-        int numAleatorio = aleatorio.nextInt(99)+1;
+        int numAleatorio = aleatorio.nextInt(9)+1;
 
         System.out.println("          Acerte o número");        
         System.out.println("===================================");
         System.out.println("          Digite o número: ");
         int num = leitor.nextInt();
 
+        int tentativas = 1;
+
         while(num != numAleatorio) {
-            System.out.println("    ERRADO! Tente novamente: ");
-            System.out.println("   _________________________ ");
+            if(numAleatorio > num) {
+                System.out.println("    ERRADO! O número aleatório é maior: ");
+            } else {
+                System.out.println("    ERRADO! O número aleatório é menor: ");
+            }
+            System.out.println("      _________________________ ");
+            tentativas++;
             num = leitor.nextInt();
         }
 
         System.out.println("     CORRETO! O número é " + numAleatorio);
+        System.out.println("Foram necessárias " + tentativas + " tentativas.");
         System.out.println("====================================");
         
+        leitor.close();
     }
 }
