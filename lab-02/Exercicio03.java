@@ -19,7 +19,7 @@ public class Exercicio03{
                 qtd0a18++;
             } else if (idade <= 35) {
                 qtd19a35++;
-            } else if (idade <= 50) {
+            } else if (idade <= 50) { 
                 qtd36a50++;
             } else if (idade <= 65) {
                 qtd51a65++;
