@@ -6,6 +6,7 @@ public class Caneta {
     private double nivelTinta;
     private boolean aberta;
     private String desenho;
+    private double tintaRestante;
 
     public void definirCor(String c) {
         cor = c;
@@ -16,11 +17,15 @@ public class Caneta {
     }
 
     public void abrirFechar() {
-        this.aberta = !aberta;
+        aberta = !aberta;
     }
 
-    public boolean isAberta() {
-        return aberta;
+    public String isAberta() {
+        if (aberta) {
+            return "Aberta";
+        } else {
+            return "Fechada";
+        }
     }
 
     public void definirNivelTinta(double n) {
@@ -41,9 +46,15 @@ public class Caneta {
         d = (int)nivelTinta / 10;
         if (aberta) {
             desenho = "-".repeat(d);
+            tintaRestante = nivelTinta % 10;
         } else {
             desenho = "Abra a caneta";
+            tintaRestante = nivelTinta;
         }
+    }
+
+    public double obterTintaRestante() {
+        return tintaRestante;
     }
 
     public String obterDesenho() {

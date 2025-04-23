@@ -9,11 +9,12 @@ public class App {
         Caneta bic = new Caneta();
 
         bic.abrirFechar();
-        bic.definirNivelTinta(67);
-        bic.definirDesenho(19);
+        bic.definirNivelTinta(23);
+        bic.definirDesenho(4);
 
-        System.out.println(bic.isAberta());
-        System.out.println(bic.obterNivelTinta());
+        System.out.println("A caneta está: " + bic.isAberta());
+        System.out.println("Tinta antes de desenhar: " + bic.obterNivelTinta());
         System.out.println(bic.obterDesenho());
+        System.out.println("Tinta restante: " + bic.obterTintaRestante());
     }
 }
