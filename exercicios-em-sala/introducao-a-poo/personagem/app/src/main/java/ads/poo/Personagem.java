@@ -58,7 +58,6 @@ public class Personagem {
     }
 
     // ficha
-    public String obterFicha() {
-        
-    }
+    
 }
+
