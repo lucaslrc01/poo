@@ -40,8 +40,8 @@ classDiagram
     + acelerar(v: int): void
     }
 
-    Carro"3..4" --> "1"Roda
-    Carro"1" o-- "1"Motor
+    Carro"1" --> "3.4"Roda
+    Carro"1" *-- "1"Motor
 
 ```
 
@@ -54,13 +54,18 @@ classDiagram
         - pesoMax : double
         - combustivel : double
         - propulsor : Motor
-        + Aviao(ca: int, pe: double, com: double, ??)
+        - qtdMotores: int
+        + Aviao(cpd: int, pe: double, com: double, pro: Motor, qtd: int)
+        + ligarDesligar()
     }
 
     class Motor{
-        tipo : String
-        ligado : boolean
-        + Motor(ti: String, li: boolean)
+        - tipo : String
+        - consumoHora: double 
+        - ligado : boolean
+        + Motor(ti: String, ch: double, li: boolean)
+        + ligarDesligar() boolean
     }
 
-    Aviao o-- Motor
+    Aviao"1" *-- "1.8"Motor
+```
