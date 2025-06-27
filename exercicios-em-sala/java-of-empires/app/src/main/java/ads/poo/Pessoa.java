@@ -1,9 +1,9 @@
 package ads.poo;
 
-public class Pessoa {
-    private double vida;
-    private double ataque;
-    private double velocidade;
+public abstract class Pessoa {
+    protected double vida;
+    protected double ataque;
+    protected double velocidade;
 
     public Pessoa(double vida, double ataque, double velocidade) {
         this.vida = vida;
@@ -11,11 +11,5 @@ public class Pessoa {
         this.velocidade = velocidade;
     }
 
-    public String mover(double distancia) {
-        return "se moveu " + distancia + "(unidade de distancia) a uma velocidade de " + velocidade + ".";
-    }
-
-    public String atacar() {
-        return "causou " + ataque + " de dano.";
-    }
+    public abstract String mover();
 }

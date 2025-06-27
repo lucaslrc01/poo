@@ -1,17 +1,17 @@
 package ads.poo;
 
-public class Arqueiro extends Pessoa{
+public class Arqueiro extends Pessoa implements Guerreiro{
     public Arqueiro(double vida, double ataque, double velocidade) {
         super(vida, ataque, velocidade);
     }
 
     @Override
-    public String mover(double distancia) {
-        return "Arqueiro " + super.mover(distancia);
+    public String mover() {
+        return "Arqueiro se moveu, velocidade: " + velocidade;
     }
 
     @Override
     public String atacar() {
-        return "Arqueiro " + super.atacar();
+        return "Arqueiro atacou, causando " + ataque + " de dano";
     }
 }

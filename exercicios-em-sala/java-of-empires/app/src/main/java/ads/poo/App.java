@@ -11,15 +11,15 @@ public class App {
         Cavaleiro c = new Cavaleiro(50,3,2);
 
         System.out.println(a.atacar());
-        System.out.println(a.mover(15));
+        System.out.println(a.mover());
         System.out.println();
 
         System.out.println(r.atacar());
-        System.out.println(r.mover(15));
+        System.out.println(r.mover());
         System.out.println();
 
         System.out.println(c.atacar());
-        System.out.println(c.mover(15));
+        System.out.println(c.mover());
         System.out.println();
     }
 }
